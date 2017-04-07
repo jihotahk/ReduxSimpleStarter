@@ -51,7 +51,7 @@ class SearchBar extends Component {
     */
 
 
-export default SearchBar;
+
 
 /*/ 'State' is a plain javascript object that is used to record or react to user events.
 // Each class-based component has its own state object.

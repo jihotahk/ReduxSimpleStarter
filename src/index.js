@@ -26,12 +26,16 @@ class App extends Component {
             videos : [],
             selectedVideo: null
         };
+
+        // constructor calls videoSearch function on 'USMNT'
         this.videoSearch('USMNT');
 
     }
 
+    // App function videoSearch defined - takes term and performs YT search
+    // YTSearch is function imported at top, takes API key and term, then fx
     videoSearch(term) {
-        YTSearch({key: API_KEY, term: term}, videos => {
+        YTSearch({key: API_KEY, term: term}, (videos) => {
              this.setState({
                 videos : videos,
                 selectedVideo : videos[0]
